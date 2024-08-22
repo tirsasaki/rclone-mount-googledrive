@@ -1,6 +1,6 @@
 # Linux-rclone-mount-googledrive-permanent
 
-**Rclone Mount for GoogleDrive or OneDrive Permanent**
+**Rclone Mount for GoogleDrive,OneDrive Other Permanent**
 
 You can create a systemd service that will automatically mount your Google Drive on startup.
 
