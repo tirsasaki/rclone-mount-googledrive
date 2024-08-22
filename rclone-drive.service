@@ -1,0 +1,17 @@
+[Unit]
+Description=Mount Google Drive using rclone
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/rclone mount remote_name: /home/username/GoogleDrive \
+  --config /home/username/.config/rclone/rclone.conf \
+  --vfs-cache-mode writes
+ExecStop=/bin/fusermount -u /home/username/GoogleDrive
+Restart=always
+User=username
+
+[Install]
+WantedBy=multi-user.target
+
