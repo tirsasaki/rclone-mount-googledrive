@@ -38,6 +38,8 @@ Make sure to replace:
 
 /home/***username***/.config/rclone/rclone.conf with the path to your Rclone configuration file (if different).
 
+User=***username***
+
 **Step 3: Reload systemd,enable and start the service:**
 
 ```sudo systemctl daemon-reload```
@@ -47,4 +49,6 @@ Make sure to replace:
 ```sudo systemctl start rclone-drive.service```
 
 After these steps, Rclone will automatically mount your Google Drive every time the system boots up.
+
+DONE
 
