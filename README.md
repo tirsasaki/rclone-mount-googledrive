@@ -10,7 +10,15 @@ You can create a systemd service that will automatically mount your Google Drive
 
 ```sudo nano /etc/systemd/system/rclone-drive.service```
 
-**Step 2: Add the following configuration into the file:**
+**Step 2: Make a folder GoogleDrive**
+
+```mkdir /home/username/GoogleDrive```
+
+Make sure to replace:
+
+/home/***username***/GoogleDrive
+
+**Step 3: Add the following configuration into the file:**
 
 ```[Unit]
 Description=Mount Google Drive using rclone
@@ -40,7 +48,7 @@ Make sure to replace:
 
 User=***username***
 
-**Step 3: Reload systemd,enable and start the service:**
+**Step 4: Reload systemd,enable and start the service:**
 
 ```sudo systemctl daemon-reload```
 
@@ -50,5 +58,4 @@ User=***username***
 
 After these steps, Rclone will automatically mount your Google Drive every time the system boots up.
 
-DONE
 
