@@ -6,17 +6,17 @@ You can create a systemd service that will automatically mount your Google Drive
 
 **Steps:**
 
-**Step 1: Create a new systemd service file, for example, rclone-drive.service:**
-
-```sudo nano /etc/systemd/system/rclone-drive.service```
-
-**Step 2: Make a folder GoogleDrive**
+**Step 1: Make a folder GoogleDrive**
 
 ```mkdir /home/username/GoogleDrive```
 
 Make sure to replace:
 
 /home/***username***/GoogleDrive
+
+**Step 2: Create a new systemd service file, for example, rclone-drive.service:**
+
+```sudo nano /etc/systemd/system/rclone-drive.service```
 
 **Step 3: Add the following configuration into the file:**
 
