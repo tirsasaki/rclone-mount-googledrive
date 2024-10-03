@@ -58,4 +58,5 @@ User=***username***
 
 After these steps, Rclone will automatically mount your Google Drive every time the system boots up.
 
+https://www.conslinux.com/how-to-install-rclone-step-by-step-guide-for-all-operating-systems/
 
